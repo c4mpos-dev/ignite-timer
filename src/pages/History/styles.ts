@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const HistoryContainer = styled.main`
     flex: 1;
-    padding: 3.5rem;
+    padding: 1rem;
+    padding-bottom: 3rem;
 
     max-height: 100%;
 
