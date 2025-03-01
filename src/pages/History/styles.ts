@@ -4,6 +4,8 @@ export const HistoryContainer = styled.main`
     flex: 1;
     padding: 3.5rem;
 
+    max-height: 100%;
+
     display: flex;
     flex-direction: column;
 
@@ -17,6 +19,20 @@ export const HistoryList = styled.div`
     flex: 1;
     overflow: auto;
     margin-top: 2rem;
+
+    &::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: ${(props) => props.theme["gray-500"]}; /* Cor do indicador */
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: ${(props) => props.theme["gray-600"]}; /* Cor do fundo */
+        border-radius: 4px;
+    }
 
     table {
         width: 100%;
